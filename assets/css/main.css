@@ -2333,6 +2333,18 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			#profile{
+				display:flex;
+				/* clip-path: circle(); */
+				height: 250px;
+				width:100%;
+				
+			}
+			#forest{
+				padding-top: 10px;
+				
+			}
+
 			@media screen and (max-width: 736px) {
 
 				.image.featured {
@@ -2351,6 +2363,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		
 /* List */
 
 	ol {
