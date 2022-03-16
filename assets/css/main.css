@@ -3389,6 +3389,12 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	#art{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+	}
+
 /* Sidebar */
 
 	#sidebar {
