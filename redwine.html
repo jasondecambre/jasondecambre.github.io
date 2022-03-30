@@ -146,7 +146,7 @@
                             <p>One way to figure this out is to look for correlations between each variable and the wine's quality rating. You could load up on what people like and scrap what they don't. <strong>But here's the catch:</strong> good and bad traits might be correlated. We know this because "you get what you pay for". Cost and quality are often positively correlated, so while we all love low cost and high quality, we tend to have to pick one and just deal with the other.</p>
                             <p>Back to wine. Since it's a bad idea to take correlations in isolation, let's look at a correlation matrix (all the correlations in the dataset) and see what it tells us. Correlations with an X are not statistically significant, so we'll ignore those.</p>
 
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/1.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/1.embed"></iframe>
 
                             <p>A little chemistry and common sense explains a lot of these:</p>
                             <ul>
@@ -161,31 +161,31 @@
                             <h2>Looking at great red wines</h2>
                             <p>We'll separate the wines we have by quality. Let's call a wine 'superb' if its quality rating is 8 or higher. A 'dreadful' wine is 3 or lower, and anything in between is 'mediocre'. How does that look?</p>
 
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/3.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/3.embed"></iframe>
 
                             <p>Nearly all the wines are rated at mediocre. Well then...we'll have to be very careful in generalizing about the extremes. Anyway, we can still look to see if nearly all the superb and dreadful wines have something setting them apart.</p>
 
                             <h2>Alcohol, fixed acidity and quality</h2>
                             <p>These seemed to be important determinants, so let's take a look at how those behave.</p>
 
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/5.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/5.embed"></iframe>
 
                             <p>Moderate to low fixed acidity and a high alcohol content seem to make the preferred wines. You can also see that low alcohol and high acidity has some dreadful data points, and mediocre wines are somewhat in between. People love alcoholic wine and don't like it sour.</p>
 
                             <h2>Sweet and salty</h2>
                             <p>We tend to like sweet stuff. Sweet by itself, sweet and sour, sweet and salty...the list goes on. If residual sugar can mellow the taste of a sharply acidic wine, maybe it can take the edge off a salty wine too. We'll separate the analysis for deadful, mediocre and superb wines to see if each category has a different relationship. To make the pattern more obvious and take it in context, we can plot a linear regression line and show the 95% confidence interval for each category as well.</p>
                             <h3>Dreadful wines get dry and salty</h3>
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/7.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/7.embed"></iframe>
                             <p>Wines tend to be paired to either <strong>contrast</strong> (paint a backdrop for the food to pop and make their differences stand out) or <strong>complement</strong> (amplify their similarities). In any case, the goal is harmony. You want wine to stand up to food without overpowering it, and vice versa. If you already have a dry wine and it's salty on top of that, well, it might be hard to find anything for it to complement. It might very well contrast -- just not in a good way.</p>
                             <p><strong>CAUTION:</strong> you see how wide the grey band is? That means we are going out on a shaky limb to generalize this claim -- there aren't a lot of data points for dreadful wine here, so we have a wide confidence interval (a.k.a. we aren't as sure as we'd like to be about this).</p>
                             <h3>Mediocre wines balance a bit</h3>
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/9.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/9.embed"></iframe>
 
                             <p>Here we see mediocre wines tend to get just a little extra sugar if they get a little extra salt. We have over 150 times as many mediocre data points as dreadful, so we're more confident about this. How do superb wines handle this tradeoff?</p>
                             
                             <h3>Superb wines really cover up their flaws</h3>
 
-                            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/11.embed"></iframe>
+                            <iframe width=100% height="800" frameborder="0" scrolling="no" src="//plotly.com/~jasondecambre/11.embed"></iframe>
                             
                             <p>Again, shaky generalization. But we saw dreadful wines not covering at all, mediocre wines covering a little and now superb wines covering a lot. Could this mean it's a good idea to make sure salty wines are sweet enough too?</p>
 
