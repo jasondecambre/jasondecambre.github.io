@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>What makes a superb red wine?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+
+		<meta property="og:image" itemprop="image" content="http://www.jasondecambre.me/images/wine.jpg" />
+        <meta property="og:type" content="article" />
+		<meta property="og:title" content="What makes a superb red wine?" />
+        <meta property="og:url" content="http://www.jasondecambre.me/redwine.html" />
+        <meta property="og:description" content="A chemical dataset tells an insightful story" />      		
+
+        <meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@jasondecambre" />
+        <meta property="twitter:title" content="What makes a superb red wine?" />
+		<meta property="twitter:description" content="A chemical dataset tells an insightful story" />
+        <meta property="twitter:url" content="http://www.jasondecambre.me/redwine.html" />
+        <meta property="twitter:image" content="http://www.jasondecambre.me/images/wine.jpg" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="../index.html">Home</a></h1>
+					<nav class="links">
+						<ul>
+							<li><a href="../about.html">About</a></li>
+							<li><a href="../projects.html">Projects</a></li>
+							<li><a href="../blog/blog.html">Blog</a></li>								
+							<li><a href="../art.html">Art</a></li>
+						</ul>
+					</nav>
+					<nav class="main">
+						<ul>
+							<li class="search">
+								<a class="fa-search" href="#search">Search</a>
+								<form id="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</li>
+							<li class="menu">
+								<a class="fa-bars" href="#menu">Menu</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../about.html">
+										<h3>About</h3>
+									</a>
+								</li>
+								<li>
+									<a href="../projects.html">
+										<h3>Projects</h3>
+									</a>
+									</a>
+								</li>
+								<li>
+									<a href="../blog/blog.html">
+										<h3>Blog</h3>
+									</a>
+								</li>									
+								<li>
+									<a href="../art.html">
+										<h3>Art</h3>
+									</a>
+								</li>
+							</ul>
+						</section> 
+
+						</section> 
+
+						<!-- Actions -->
+							<section>
+								<!-- <ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul> -->
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+                        <article class="post">
+                            <header>
+                                <div class="title">
+                                    <h2><a href="redwine.html">What makes a superb red wine?</a></h2>
+                                    <p>A chemical dataset tells an insightful story</p>
+                                </div>
+                                <div class="meta">
+                                    <time class="published" datetime="2022-30-03">March 30, 2022.</time>
+                                    <a href="#" class="author"><span class="name">Jason DeCambre</span><img src="../images/avatar.jpg" alt="" /></a>
+                                </div>
+                            </header>
+                            <a href="redwine.html" class="image featured"><img src="../images/wine.jpg" alt="" /></a>
+                            <a href = " https://www.pexels.com/photo/wine-glass-with-red-liquid-on-black-table-66636/"><i>Photo by Timur Saglambilek</i></a>
+                            <p><br>Wine has been romanticized for a long time. There are those who usually love a nice glass of it, and there are others who can't understand how anyone could enjoy and pay so much for spoiled grape juice. No judgment for either preference here. I'll admit that I find wine really intriguing, not just from a food perspective but also because it's <a href = 'https://www.science.org.au/curious/earth-environment/chemistry-wine-part-1'>a chemically complex substance</a> that can make an interesting data analytics project.</p>
+                            <p>I saw <a href ='https://towardsdatascience.com/a-data-scientists-guide-to-buying-wine-b584c77b9e60'>Barbara Vanaki's analysis</a> on a 2009 Portuguese Vinho Verde dataset in Python, so I figured I'd take a look in R for some practice. Shall we begin?</p>
+                            <p>My GitHub repo with the code behind the analysis and visualizations: <a href ='https://github.com/jasondecambre/RedWineQuality'>https://github.com/jasondecambre/RedWineQuality</a>
+                                <br>Data source citation: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+                                Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009. Available at <a href = 'https://archive.ics.uci.edu/ml/datasets/wine+quality'>https://archive.ics.uci.edu/ml/datasets/wine+quality</a>
+                            </p>
+
+                            <h2>Agreeing on what we're measuring</h2>
+                            <p>When was the last time you realized <strong>something you thought was true turned out to be fake news?</strong> That's not only a problem because persons spread fake news on purpose. It can also happen when we genuinely think "this means that" and start repeating what we believe to be true, even when it's not. What's the relevance for interpreting data? It's easy to conclude and spread nonsense if you don't know what you're measuring. So let's agree on what we're measuring.</p>
+                            <p>First of all, this dataset was from Portugal in 2009. It looks at wine from 1 region: Vinho Verde. In this analysis, I'm focusing on red wine because I was more curious about it. This means that any variations in our data take place within red (not white) wines, from the same country, from the same region, sampled in the same year.</p>
+                            <p>Second, remember that the name 'Vinho Verde' reflects a <strong>region</strong>, not a type of grape. The dataset doesn't give us the types of grapes, the vineyards or even the brands that the wine was produced under. We can only use what the dataset tells us. So what data do we have?</p>
+                            <ul>
+                                <li><b>Fixed acidity:</b> this gives the wine its structure and 'zing'...too much, and it's sour, too little, and it tastes flat and flabby.</li>
+                                <li><b>Volatile acidity:</b> 'volatile' comes from a Latin word meaning 'fly'. A volatile substance will easily 'fly away' (evaporate) at room temperature, so this is the kind of acidity you'll sooner smell than taste. Since red wines aren't usually chilled as much as white wines/rosés, this might be a more meaningful sensory factor for analyzing the former than the latter.</li>
+                                <li><b>Citric acid:</b> adds to overall acidity, usually used as an additive to improve taste and make the wine more robust to other flavours.</li>
+                                <li><b>Residual sugar:</b> wine is alcoholic because sugar ferments into alcohol. Any sugar left behind in this process is residual, and thus gives the wine a sweet taste.</li>
+                                <li><b>Chlorides:</b> these are salts. This often has a lot to do with the kind of soil at the vineyard.</li>
+                                <li><b>Sulfur:</b> I'm not 100% sure about this one so I don't want to draw unwarranted conclusions about it, but it seems like it's used as a preservative</li>
+                                <li><b>Quality:</b> subjective rating by tasters between 1 and 10</li>
+                            </ul>
+
+                            <p>Now with that out of the way, let's start with some analysis.</p>
+
+                            <h2>How related are the features?</h2>
+
+                            <p>Suppose you were a winemaker. Making lots of profit and establishing your brand comes down to <i>making wines that people like.</i> So you'd want to know</p>
+                            <ol>
+                                <li><strong>what people like</strong> and make sure your wine is full of that, and</li>
+                                <li><strong>what people don't like</strong> and make sure your wine has as little of that as possible. </li>
+                            </ol>
+                            <p>One way to figure this out is to look for correlations between each variable and the wine's quality rating. You could load up on what people like and scrap what they don't. <strong>But here's the catch:</strong> good and bad traits might be correlated. We know this because "you get what you pay for". Cost and quality are often positively correlated, so while we all love low cost and high quality, we tend to have to pick one and just deal with the other.</p>
+                            <p>Back to wine. Since it's a bad idea to take correlations in isolation, let's look at a correlation matrix (all the correlations in the dataset) and see what it tells us. Correlations with an X are not statistically significant, so we'll ignore those.</p>
+
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/1/?share_key=3OTPFW8SnqH32YdafSwIeA" target="_blank" title="redwinecorr" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/1.png?share_key=3OTPFW8SnqH32YdafSwIeA" alt="redwinecorr" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:1" sharekey-plotly="3OTPFW8SnqH32YdafSwIeA" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            <p>A little chemistry and common sense explains a lot of these:</p>
+                            
+                            <ul>
+                                <li>pH and acidity are strongly negatively correlated, since having lower pH values means something is more acidic</li>
+                                <li>citric acid increases fixed acidity, so they move together</li>
+                                <li>people like alcohol, so that's what was most strongly correlated with quality</li>
+                                <li>alcohol and fixed (liquid) acids are less dense than water and volatile acids, so more of the former means less of the latter</li>
+                            </ul>
+
+                            <p>Now that we have a little more context, we can start looking for what separates the best wines from the average and the worst.</p>
+
+                            <h2>Looking at great red wines</h2>
+                            <p>We'll separate the wines we have by quality. Let's call a wine 'superb' if its quality rating is 8 or higher. A 'dreadful' wine is 3 or lower, and anything in between is 'mediocre'. How does that look?</p>
+
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/3/?share_key=TgFybXgN2rJfB0VALDp3qs" target="_blank" title="redwinedms" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/3.png?share_key=TgFybXgN2rJfB0VALDp3qs" alt="redwinedms" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:3" sharekey-plotly="TgFybXgN2rJfB0VALDp3qs" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            
+                            <p>Nearly all the wines are rated at mediocre. Well then...we'll have to be very careful in generalizing about the extremes. Anyway, we can still look to see if nearly all the superb and dreadful wines have something setting them apart.</p>
+
+                            <h2>Alcohol, fixed acidity and quality</h2>
+                            <p>These seemed to be important determinants, so let's take a look at how those behave.</p>
+
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/5/?share_key=dBHjG94U1ao6369UwYsAxi" target="_blank" title="dots" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/5.png?share_key=dBHjG94U1ao6369UwYsAxi" alt="dots" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:5" sharekey-plotly="dBHjG94U1ao6369UwYsAxi" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            <p>Moderate to low fixed acidity and a high alcohol content seem to make the preferred wines. You can also see that low alcohol and high acidity has some dreadful data points, and mediocre wines are somewhat in between. People love alcoholic wine and don't like it sour.</p>
+
+                            <h2>Sweet and salty</h2>
+                            <p>We tend to like sweet stuff. Sweet by itself, sweet and sour, sweet and salty...the list goes on. If residual sugar can mellow the taste of a sharply acidic wine, maybe it can take the edge off a salty wine too. We'll separate the analysis for dreadful, mediocre and superb wines to see if each category has a different relationship. To make the pattern more obvious and take it in context, we can plot a linear regression line and show the 95% confidence interval for each category as well.</p>
+                            <h3>Dreadful wines get dry and salty</h3>
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/7/?share_key=5dy8deSFkILp9g6gwLqg8W" target="_blank" title="dr" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/7.png?share_key=5dy8deSFkILp9g6gwLqg8W" alt="dr" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:7" sharekey-plotly="5dy8deSFkILp9g6gwLqg8W" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            <p>Wines tend to be paired to either <strong>contrast</strong> (paint a backdrop for the food to pop and make their differences stand out) or <strong>complement</strong> (amplify their similarities). In any case, the goal is harmony. You want wine to stand up to food without overpowering it, and vice versa. If you already have a dry wine and it's salty on top of that, well, it might be hard to find anything for it to complement. It might very well contrast -- just not in a good way.</p>
+                            <p><strong>CAUTION:</strong> you see how wide the grey band is? That means we are going out on a shaky limb to generalize this claim -- there aren't a lot of data points for dreadful wine here, so we have a wide confidence interval (a.k.a. we aren't as sure as we'd like to be about this).</p>
+                            <h3>Mediocre wines balance a bit</h3>
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/9/?share_key=kK4Lyo9amV5BtqCA8HmC14" target="_blank" title="md" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/9.png?share_key=kK4Lyo9amV5BtqCA8HmC14" alt="md" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:9" sharekey-plotly="kK4Lyo9amV5BtqCA8HmC14" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            
+                            <p>Here we see mediocre wines tend to get just a little extra sugar if they get a little extra salt. We have over 150 times as many mediocre data points as dreadful, so we're more confident about this. How do superb wines handle this tradeoff?</p>
+                            
+                            <h3>Superb wines really cover up their flaws</h3>
+
+                            <div>
+                                <a href="https://plotly.com/~jasondecambre/11/?share_key=QcvuU13xlWyUVvklfN5DjY" target="_blank" title="sp" style="display: block; text-align: center;"><img src="https://plotly.com/~jasondecambre/11.png?share_key=QcvuU13xlWyUVvklfN5DjY" alt="sp" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                                <script data-plotly="jasondecambre:11" sharekey-plotly="QcvuU13xlWyUVvklfN5DjY" src="https://plotly.com/embed.js" async></script>
+                            </div>
+                            <p>Again, shaky generalization. But we saw dreadful wines not covering at all, mediocre wines covering a little and now superb wines covering a lot. Could this mean it's a good idea to make sure salty wines are sweet enough too?</p>
+
+                            <h2>Takeaways</h2>
+                            <p>Persons seem to like wine that has <strong>a lot of alcohol, moderate to low acidity</strong> and <strong>enough residual sugar</strong> to stand up to the salty taste that naturally occurring chlorides can produce. </p>
+                            <p>I'd have loved to try predicting quality with some machine learning models, but since 1) almost all the quality ratings are in the mediocre range and 2) the dataset is so full of outliers, that didn't seem promising. Another set of insights I'd have loved is checking out what grapes, vineyards and brands these came from, but sadly that's not available. </p>
+                            <p>A final takeaway from this is while superb wines might not be perfect, they display enough fine points to justify their weaker aspects. That's something I think we can apply to life in general -- dealing with people, projects and anywhere else that reasonable positivity is appropriate.</p>
+                            <footer>
+									<ul class="stats">
+										<li><a href="#">Wine</a></li>
+										<li><a href="#">Chemistry</a></li>
+                                        <li><a href="#">Data</a></li>
+                                        <li><a href="#">Visualization</a></li>
+										<!-- <li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li> -->
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="http://www.twitter.com/jasondecambre" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/jasondecambre/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="http://www.instagram.com/jasondecambre" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://www.linkedin.com/in/jasondecambre" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						</ul>
+						<p class="copyright">&copy; 2022 Jason DeCambre | Design: <a href="http://html5up.net">HTML5 UP</a>. | Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
